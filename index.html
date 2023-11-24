@@ -70,7 +70,7 @@
         </div>
       </div>
     </header>
-    
+
     <!-- About Section -->
     <section class="" id="about">
       <div class="container-fluid">
@@ -79,42 +79,38 @@
         <div class="row">
           <div class="col-lg-3 ml-auto">
             <p>Hi! I am Sergio. I currently live in <strong>Ciudad Juarez, Chihuahua, Mexico</strong>. I consider myself a Technology Enthusiast.
-            I may not be Vitalik Buterin or Elon Musk, but everytime I talk, read, or listen about Web Development,
-            Cloud Computing, Automation, or something like that, it gives me goosebumps.
-            <br>
-            Currently I work as a <strong>'Software Engineer'</strong> at an important Internet Service Provider in Mexico.
-            I basically just help to <strong>create and maintain scalable systems</strong> that supports the activities
-            of other departments, or that directly gives some <strong>added value</strong> to our end customers. I really love what I do and I think
+            Currently, I work as a <strong>'Software Engineer'</strong>. I really love what I do and I think
             that the most satisfying part of software development is when you see other people taking benefit of
             what you have developed. <strong>That feeling is just priceless</strong>.
             </p>
           </div>
           <div class="col-lg-3 auto">
             <p>
-            I have learned the bad way that there is time for everything. I used to give 150% at work but I was almost abscent in the other areas of my life,
-            which also affected my work over the long term. I realized that the key is to bring 100% to everything you do!.
-            Be the best with yourself (eat well, do exercise, have fun!), give ALL of yourself when you are with your family/couple/friends and give 
-            your best version at work. <strong>Stop giving pieces</strong>. This ends up adding to your craft over the long term. 1+1=3
-            <br>
             I consider myself a proactive person, a problem solver, a team player and I always have <strong>something unique</strong> to contribute in every
             project I am involved.
             <br>
-            I like to play soccer, to do some lifts at the gym, to take a walk, to visit and spend some time with all my family, to go to the movie theatre,
-            to read tech articles, to test new technologies, to be with my wife when she's at home, to play some de-stressing videogames...
+            I like to play soccer, do some lifts at the gym, take a walk, visit and spend some time with all my family, go to the movies,
+            read tech articles, test new technologies, play some de-stressing videogames...
             </p>
           </div>
           <div class="col-lg-3 mr-auto">
             <p>
-            Some things I would like to learn for fun are: Android Development, Machine Learning, Stock Exchange (At least Mexico's BMV), and maybe make my own fake cryptocurrency.
+            Some things I would like to learn for fun are: Mobile Development, Machine Learning, Stock Exchange (At least Mexico's BMV), and maybe make my own fake cryptocurrency.
             </p>
             <ul>
               <li>Sergio Javier Gonzalez Avalos</li>
               <li>+52 6563171752</li>
               <li>sergio.xga@gmail.com</li>
               <li>Male</li>
-              <li>27</li>
+              <li id="age"></li>
               <li>Married</li>
             </ul>
+            <script type="text/javascript">
+              const birthDate = new Date(1992, 08, 20);
+              const today = new Date();
+              const age = Math.floor((today-birthDate) / (365.25 * 24 * 60 * 60 * 1000));
+              document.getElementById('age').innerHTML = age + ' years old';
+            </script>
           </div>
         </div>
       </div>
@@ -131,101 +127,114 @@
               <h1 id="timeline">Timeline</h1>
           </div>
           <ul class="timeline">
-              <li class="timeline-inverted">
-                <!-- <div class="timeline-badge danger"><i class="fa fa-laptop"></i></div> -->
-                <a class='image-badge' style="line-height: 0px;" href="https://www.youracclaim.com/badges/cfa29ca3-4e08-4095-84d9-dd0e202cb43a/public_url"><img width="50px" height="50px" src="./images/portfolio/aws-certified-solutions-architect-associate.png" alt=""></a>
-                <!-- <img class="responsive" src="./images/portfolio/aws-certified-solutions-architect-associate.png" alt=""> -->
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">AWS Certified SAA</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p>
-                      <a href="https://www.youracclaim.com/badges/cfa29ca3-4e08-4095-84d9-dd0e202cb43a/public_url">Solutions Architect Associate</a>
-                    </p>
-                  </div>
+            <li>
+              <div class="timeline-badge warning"><i class="fa fa-laptop"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">UCSF contractor (SND)</h4>
                 </div>
-              </li>
-              <li>
-                <a class="image-badge" href="https://www.youracclaim.com/badges/34269d91-5b4e-43f6-9300-268d99a8b8c1/public_url"><img width="50px" height="50px" src="./images/portfolio/lfcs-linux-foundation-certified-systems-administrator.1.png" alt=""></a>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Linux Foundation Certified SysAdmin</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p>
-                      <a href="https://www.youracclaim.com/badges/34269d91-5b4e-43f6-9300-268d99a8b8c1/public_url">With Certificate ID: LFCS-1600-001263-0100</a>
-                    </p>
-                  </div>
+                <div class="timeline-body">
+                  <p>
+                    Software Engineer at UCSF's Eureka Platform, working with an amazing team of Ruby on Rails developers, and learning a lot of new stuff.
+                  </p>
                 </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-badge danger"><i class="fa fa-laptop"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Started to work at Transtelco</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p>
-                      Working here has been the best education I've ever had, in all aspects, not only profesional.
-                    </p>
-                  </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <!-- <div class="timeline-badge danger"><i class="fa fa-laptop"></i></div> -->
+              <a class='image-badge' style="line-height: 0px;" href="https://www.youracclaim.com/badges/cfa29ca3-4e08-4095-84d9-dd0e202cb43a/public_url"><img width="50px" height="50px" src="./images/portfolio/aws-certified-solutions-architect-associate.png" alt=""></a>
+              <!-- <img class="responsive" src="./images/portfolio/aws-certified-solutions-architect-associate.png" alt=""> -->
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">AWS Certified SAA</h4>
                 </div>
-              </li>
-              <li>
-                <div class="timeline-badge success"><i class="fa fa-star"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">International Business Model Competition</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p>
-                      Participated in the IBMC 2015 held at Provo, Utah, and hosted by the Brigham Young University.
-                      <br>
-                      After winning 1st place in the BMC Mexico, represented my country and my university against startups from the best universities around the globe.
-                    </p>
-                  </div>
+                <div class="timeline-body">
+                  <p>
+                    <a href="https://www.youracclaim.com/badges/cfa29ca3-4e08-4095-84d9-dd0e202cb43a/public_url">Solutions Architect Associate</a>
+                  </p>
                 </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-badge info"><i class="fa fa-graduation-cap"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">ITESM (Monterrey Institute of Technology and Higher Education, CDJ)</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p>
-                      Graduated from Business and Information Technologies Engineering. Average Grade: 94 out of 100.
-                      <br>
-                      Lean Six Sigma Green Belt Certified by ITESM and Arizona State University.
-                    </p>
-                  </div>
+              </div>
+            </li>
+            <li>
+              <a class="image-badge" href="https://www.youracclaim.com/badges/34269d91-5b4e-43f6-9300-268d99a8b8c1/public_url"><img width="50px" height="50px" src="./images/portfolio/lfcs-linux-foundation-certified-systems-administrator.1.png" alt=""></a>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Linux Foundation Certified SysAdmin</h4>
                 </div>
-              </li>
-              <li>
-                <div class="timeline-badge success"><i class="fa fa-bolt"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Lean Startup Machine</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p>
-                    'Lean Startup Machine' 1st place, at the 'Entrepreneurship with Innovation International Congress' at Chihuahua, México.
-                    </p>
-                  </div>
+                <div class="timeline-body">
+                  <p>
+                    <a href="https://www.youracclaim.com/badges/34269d91-5b4e-43f6-9300-268d99a8b8c1/public_url">With Certificate ID: LFCS-1600-001263-0100</a>
+                  </p>
                 </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-badge"><i class="fa fa-graduation-cap"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">EPCCJ (Juarez City Central High School)</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Physics and math specialty</p>
-                  </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-badge danger"><i class="fa fa-laptop"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Started to work at Transtelco</h4>
                 </div>
-              </li>
+                <div class="timeline-body">
+                  <p>
+                    Working here has been the best education I've ever had, in all aspects, not only profesional.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-badge success"><i class="fa fa-star"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">International Business Model Competition</h4>
+                </div>
+                <div class="timeline-body">
+                  <p>
+                    Participated in the IBMC 2015 held at Provo, Utah, and hosted by the Brigham Young University.
+                    <br>
+                    After winning 1st place in the BMC Mexico, represented my country and my university against startups from the best universities around the globe.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-badge info"><i class="fa fa-graduation-cap"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">ITESM (Monterrey Institute of Technology and Higher Education, CDJ)</h4>
+                </div>
+                <div class="timeline-body">
+                  <p>
+                    Graduated from Business and Information Technologies Engineering. Average Grade: 94 out of 100.
+                    <br>
+                    Lean Six Sigma Green Belt Certified by ITESM and Arizona State University.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-badge success"><i class="fa fa-bolt"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Lean Startup Machine</h4>
+                </div>
+                <div class="timeline-body">
+                  <p>
+                  'Lean Startup Machine' 1st place, at the 'Entrepreneurship with Innovation International Congress' at Chihuahua, México.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-badge"><i class="fa fa-graduation-cap"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">EPCCJ (Juarez City Central High School)</h4>
+                </div>
+                <div class="timeline-body">
+                  <p>Physics and math specialty</p>
+                </div>
+              </div>
+            </li>
           </ul>
       </div>
           <div class="col-lg-3 ml-auto">
@@ -240,31 +249,13 @@
         <h2 class="text-center">My Job</h2>
         <hr class="star-light">
         <div class="row">
-          <div class="col-lg-6 ml-auto">
-            <p>My history in this position began 4 years ago, when I signed as a Research and Development Engineer. At that time,
-            I only knew basic HTML, CSS and JS, but Ricardo Roman, my former boss, knew that I was capable and put his <strong>trust</strong> in my dedication.
-            After the first week, I learned basic Ruby and was familiar with an MVC framework like Rails. Everything was great,
-            I was learning at my own pace, but then, after 4 months or so, my former boss resigned to take a good opportuniy outside the country.
-            <br>
-            Without an official position change, nor even a raise (understandable because I only had 4 months in the company), I suddenly
-            had all my ex-boss <strong>responsibilities!</strong> I didn't give up and... At the cost of not spending time with my family (or myself!),
-            sleepless nights, stress and unhealthy habits, I learned everything I know today.
-            </p>
-          </div>
-          <div class="col-lg-6 auto">
+          <div class="col-1"></div>
+          <div class="col-10">
             <p>
-            As the <strong>Engineer responsible of the R&D Department</strong> I was directly under the supervision of the Director of Engineering, and I managed to grow the team from 2 Engineers, to 3 Engineers and 2 Interns. I learned that <strong>working with people</strong> can even be more difficult (and more important) than working with code. We organized an Annual RnD Presentation where all the company put their eyes in what we had done in a year. The executives realized that there was a great opportunity to automate our processess if they invested in their software teams and make them work together.
-            This is how the <strong>DevOps</strong> department was created:
-            a merge of the former RnD developers, the BSS developers, the IT Engineers, and some new members. With this movement, I now have another boss that I admire, a few raises, and lots of new challenges every day.
+              The product is a digital research platform. Here is where I've sharpened my Ruby and Ruby on Rails skills, since here there is only one main big project to focus on and the other engineers are very talented and happy to let me learn from them. As the person in charge of major front-end changes, my JS skills were not left behind.
             </p>
           </div>
-          <div class="col-lg-12 mr-auto">
-            <p>
-            Some topics I am really involved into in my day-to-day basis are: Web Applications Development (Most of the times with Rails, NetSuite SuiteScript and Vue.js),
-            Cloud Computing (Amazon and Google Cloud Platform), Systems Integrations, Database Management, Scripting, 3rd level Support for the NOC team,
-            and Set Up and maintenance of lots of Linux Services!.
-            </p>
-          </div>
+          <div class="col-1"></div>
         </div>
       </div>
     </section>
@@ -327,8 +318,8 @@
               <div class="col-md-8">
                 <div class="progress">
                   <div class="progress-bar progress-bar-striped progress-bar-animated bg-info active" role="progressbar"
-                  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                    50%
+                  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    70%
                   </div>
                 </div>
               </div>
@@ -340,8 +331,8 @@
               <div class="col-md-8">
                 <div class="progress">
                   <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning active" role="progressbar"
-                  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                    80%
+                  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                    90%
                   </div>
                 </div>
               </div>
@@ -405,8 +396,8 @@
               <div class="col-md-8">
                 <div class="progress">
                   <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar"
-                  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-                    40%
+                  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    70%
                   </div>
                 </div>
               </div>
@@ -432,6 +423,7 @@
                 <ul>
                   <li>JSON</li>
                   <li>YAML</li>
+                  <li>HAML</li>
                   <li>XML</li>
                 </ul>
               </div>
@@ -477,8 +469,8 @@
               <div class="col-md-8">
                 <div class="progress">
                   <div class="progress-bar progress-bar-striped progress-bar-animated active" role="progressbar"
-                  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                    Bootrap 3 and AlphaV4
+                  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                    Bootrap 4
                   </div>
                 </div>
               </div>
@@ -490,8 +482,21 @@
               <div class="col-md-8">
                 <div class="progress">
                   <div class="progress-bar progress-bar-striped progress-bar-animated bg-success active" role="progressbar"
-                  aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
-                    30%
+                  aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                    60%
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                Hotwire (Turbo, Stimulus)
+              </div>
+              <div class="col-md-8">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-success active" role="progressbar"
+                  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    70%
                   </div>
                 </div>
               </div>
@@ -503,8 +508,8 @@
               <div class="col-md-8">
                 <div class="progress">
                   <div class="progress-bar progress-bar-striped progress-bar-animated bg-info active" role="progressbar"
-                  aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                    60%
+                  aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                    30%
                   </div>
                 </div>
               </div>
@@ -827,10 +832,20 @@
               <img class="img-fluid" src="images/portfolio/econfe_login.png" alt="">
             </a>
           </div>
+          <div class="col-sm-4 portfolio-item">
+            <a class="portfolio-link" href="#portfolioModal7" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="images/portfolio/covid19_landing.png" alt="">
+            </a>
+          </div>
         </div>
       </div>
     </section>
-    
+
     <!-- My Job Section -->
     <section class="success" id="failure" style="background-color: #D9534F">
       <div class="container-fluid">
@@ -838,7 +853,7 @@
         <br>
         <div class="row">
           <div class="col-lg-3 ml-auto">
-            <p>Failures are part of our life, and there is so much to <strong>learn</strong> from them. I will just explain a few because it is really
+            <p>Failures are part of our life, and there is so much to <strong>learn</strong> from them. I'll just explain a few because it is really
             embarrassing. I will list other epic fails and in case you want to know more about them, contact me :)
             <br>
             </p>
@@ -849,40 +864,40 @@
                 Aromatherapy' just appeared in the TV show 'Shark Tank Mexico'.
               </li>
               <li>
-                I experimented with Bitcoin, but I left the boat before it sailed. You can click here to see the Bitcoin price yesterday:
+                I experimented with Bitcoin, but I left the boat before it sailed. You can click here to see the current Bitcoin price:
                 <button id="btc_price" class="btn btn-danger" onclick="refreshPrice();">Get BTC Price</button>
                 <script type="text/javascript">
                   function refreshPrice(){
                     $.ajax({
                       dataType: "json",
-                      url: "https://api.coindesk.com/v1/bpi/historical/close.json?for=yesterday",
+                      url: "https://api.coindesk.com/v1/bpi/currentprice.json",
                       success: function(data){
-                        $("#btc_price").html('$' + Object.values(data['bpi'])[0] + 'USD');
+                        $("#btc_price").html('$' + data.bpi.USD.rate + ' USD');
                       }
                     });
                   }
                 </script>
-                
+
               </li>
               <li>
                 I decided to invest in a new car and put it to make some money with Uber. What can I say? Bad drivers, 1 accident and
-                2 thefts. After that, my business partner (that was managing the car and the drivers) just quit. Today I'm renting the
-                car and I hope someday I may at least recover my investment.
+                2 thefts. After that, my business partner (that was managing the car and the drivers) just quit. Then I just rented the car for a while
+                and eventually sold it to break-even.
               </li>
             </ol>
           </div>
           <div class="col-lg-3 mr-auto">
-            <ul>
+            <ol start="4">
               <li>I was overconfident and failed my first attempt of The Linux Foundation SysAdmin Certification test</li>
               <li>I droped a database table because of a misunderstanding with the COO. It wasn't really my fault, but I should've 
               waited for him to make a call... And I didn't...</li>
               <li>I fired the wrong person.</li>
               <li>I refused to eat until I fixed a bug... I realized that when you are hungry, you get angry and the code just
               can't flow out your mind.</li>
-              <li>I started to abuse from the cloud. My boss pointed out that we were expending too much in AWS and GCP.</li>
+              <li>I started to abuse from the cloud. My boss pointed out that we were spending too much in AWS and GCP.</li>
               <li>I powered off a development server instead of rebooting it. I had to go to the data center at El Paso to turn
               it on again.</li>
-            </ul>
+            </ol>
           </div>
         </div>
       </div>
@@ -940,13 +955,7 @@
       <div class="footer-above">
         <div class="container">
           <div class="row">
-            <div class="footer-col col-md-6">
-              <h3>Location</h3>
-              <p>You can ask for me at Transtelco
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.1810720314816!2d-106.43556908488885!3d31.738258181298065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75b4e4fb07ac9%3A0x1707a6082fbbd499!2sTranstelco!5e0!3m2!1sen!2smx!4v1589773361675!5m2!1sen!2smx" width="500" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </p>
-            </div>
-            <div class="footer-col col-md-6">
+            <div class="footer-col col-12">
               <h3>Around the Web</h3>
               <ul class="list-inline">
                 <li class="list-inline-item">
@@ -1499,6 +1508,77 @@
                         Languages:
                       </strong>
                       Ruby, Perl, JS, HTML, CSS
+                    </li>
+                  </ul>
+                  <button class="btn btn-success" type="button" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Eureka -->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2>Eureka & Eureka Editor</h2>
+                  <hr class="star-primary">
+                  <div id="carouselProyect7" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                      <div class="carousel-item active">
+                        <img class="d-block img-fluid" src="images/portfolio/covid19_landing.png" alt="First slide">
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselProyect7" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselProyect7" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                  <p>Eureka is UCSF's Digital Research Platform. It enables technology-driven research for investigators.
+                    I was in charge of major UI changes and whole new features, including critical parts of the Eureka Editor, which is a
+                    tool that allows non-technical users to build their own research studies in our platform and make live updates,
+                    something that previously needed developer work to be deployed in a new release.
+                  </p>
+                  <ul class="list-inline item-details">
+                    <li>
+                      <strong>
+                        Name:
+                      </strong>
+                      Eureka & Eureka Editor
+                    </li>
+                    <li>
+                      <strong>
+                        Collaborators:
+                      </strong>
+                      <a href="https://info.eurekaplatform.org/team/">Eureka Tech Team</a>
+                    </li>
+                    <li>
+                      <strong>
+                        Technologies:
+                      </strong>
+                      Ruby On Rails 6, Bootstrap 4, Hotwire (Turbo and Stimulus).
+                    </li>
+                    <li>
+                      <strong>
+                        Languages:
+                      </strong>
+                      Ruby, JS, HTML/HAML, CSS
                     </li>
                   </ul>
                   <button class="btn btn-success" type="button" data-dismiss="modal">
